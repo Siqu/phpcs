@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<ruleset name="Seb">
+ <description>Serebrov Boris's coding standard</description>
+
+ <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+ <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
+ <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+ <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+ <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+ <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+ <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+
+ <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+ <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+
+ <rule ref="Generic.Commenting.Todo"/>
+
+ <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+
+ <rule ref="Generic.Files.LineEndings"/>
+
+ <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+ <!--rule ref="Generic.Formatting.MultipleStatementAlignment"/-->
+ <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
+
+ <rule ref="Generic.NamingConventions.ConstructorName"/>
+ <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+ <!--rule ref="PEAR.NamingConventions.ValidClassName"/-->
+
+ <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+ <rule ref="Generic.WhiteSpace.ScopeIndent"/>
+
+ <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+ <rule ref="Generic.PHP.NoSilencedErrors"/>
+ <!--Checks that all uses of true, false and null are lowerrcase.-->
+ <rule ref="Generic.PHP.LowerCaseConstant"/>
+ <rule ref="Generic.PHP.DeprecatedFunctions"/>
+ <rule ref="Generic.PHP.ForbiddenFunctions"/>
+
+ <!-- Lines can be 120 chars long, but never show errors -->
+ <rule ref="Generic.Files.LineLength">
+  <properties>
+   <property name="lineLimit" value="120"/>
+   <property name="absoluteLineLimit" value="0"/>
+  </properties>
+ </rule>
+
+ <!-- Tweaks to metrics -->
+ <rule ref="Generic.Metrics.CyclomaticComplexity">
+  <properties>
+   <property name="complexity" value="10"/>
+   <property name="absoluteComplexity" value="100"/>
+  </properties>
+ </rule>
+ <rule ref="Generic.Metrics.NestingLevel">
+  <properties>
+   <property name="nestingLevel" value="5"/>
+   <property name="absoluteNestingLevel" value="50"/>
+  </properties>
+ </rule>
+
+ <rule ref="PEAR.Functions.ValidDefaultValue"/>
+ <rule ref="PEAR.ControlStructures.MultiLineCondition"/>
+ <rule ref="PEAR.Functions.FunctionCallSignature"/>
+
+ <!-- Include the whole Squiz standard except FunctionComment, which we override -->
+ <rule ref="Squiz">
+  <exclude name="Squiz.Commenting.FunctionComment"/>
+  <exclude name="Squiz.Commenting.FileComment"/>
+  <exclude name="Squiz.Files.FileExtension"/>
+  <exclude name="Squiz.Commenting.ClassComment"/>
+ </rule>
+ <rule ref="Squiz.Classes.ClassDeclaration"/>
+ <rule ref="Squiz.Classes.ClassFileName"/> 
+ <rule ref="Squiz.Classes.DuplicateProperty"/> 
+ <rule ref="Squiz.Classes.LowercaseClassKeywords"/> 
+ <rule ref="Squiz.Classes.SelfMemberReference"/> 
+ <rule ref="Squiz.Classes.ValidClassName"/> 
+
+ <rule ref="Squiz.CodeAnalysis.EmptyStatement"/> 
+
+ <rule ref="Squiz.ControlStructures.ControlSignature"/>
+ <rule ref="Squiz.ControlStructures.ElseIfDeclaration"/>
+ <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
+ <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
+ <rule ref="Squiz.ControlStructures.InlineIfDeclaration"/>
+ <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
+ <rule ref="Squiz.ControlStructures.SwitchDeclaration"/>
+
+ <rule ref="Squiz.Commenting.InlineComment"/>
+ <rule ref="Squiz.Commenting.BlockComment"/>
+ <rule ref="Squiz.Commenting.DocCommentAlignment"/>
+ <rule ref="Squiz.Commenting.EmptyCatchComment"/>
+ <rule ref="Squiz.Commenting.LongConditionClosingComment"/>
+ <rule ref="Squiz.Commenting.PostStatementComment"/>
+
+ <rule ref="Squiz.Formatting.OperatorBracket"/>
+
+ <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
+ <rule ref="Squiz.Functions.FunctionDeclaration"/>
+ <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
+ <rule ref="Squiz.Functions.GlobalFunction"/>
+ <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
+ <rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/>
+
+ <rule ref="Squiz.NamingConventions.ConstantCase"/>
+ <rule ref="Squiz.NamingConventions.ValidFunctionName"/>
+ <rule ref="Squiz.NamingConventions.ValidVariableName"/>
+
+ <rule ref="Squiz.Objects.DisallowObjectStringIndex"/>
+ <rule ref="Squiz.Objects.ObjectInstantiation"/>
+ <rule ref="Squiz.Objects.ObjectMemberComma"/>
+
+ <rule ref="Squiz.Operators.ComparisonOperatorUsage"/>
+ <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
+ <rule ref="Squiz.Operators.ValidLogicalOperators"/>
+
+ <rule ref="Squiz.PHP.CommentedOutCode"/>
+ <rule ref="Squiz.PHP.DisallowComparisonAssignment"/>
+ <rule ref="Squiz.PHP.DisallowInlineIf"/>
+ <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
+ <rule ref="Squiz.PHP.DisallowObEndFlush"/>
+ <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
+ <rule ref="Squiz.PHP.DiscouragedFunctions"/>
+ <rule ref="Squiz.PHP.EmbeddedPhp"/>
+ <rule ref="Squiz.PHP.Eval"/>
+ <rule ref="Squiz.PHP.ForbiddenFunctions"/>
+ <rule ref="Squiz.PHP.GlobalKeyword"/>
+ <rule ref="Squiz.PHP.Heredoc"/>
+ <rule ref="Squiz.PHP.InnerFunctions"/>
+ <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+ <rule ref="Squiz.PHP.NonExecutableCode"/>
+
+ <rule ref="Squiz.Scope.MemberVarScope"/>
+ <rule ref="Squiz.Scope.MethodScope"/>
+ <rule ref="Squiz.Scope.StaticThisUsage"/>
+
+ <rule ref="Squiz.Strings.ConcatenationSpacing"/>
+ <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
+ <rule ref="Squiz.Strings.EchoedStrings"/>
+
+ <rule ref="Squiz.WhiteSpace.CastSpacing"/>
+ <rule ref="Squiz.WhiteSpace.ControlStructureSpacing"/>
+ <rule ref="Squiz.WhiteSpace.FunctionClosingBraceSpace"/>
+ <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
+ <rule ref="Squiz.WhiteSpace.FunctionSpacing"/>
+ <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
+ <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
+ <rule ref="Squiz.WhiteSpace.MemberVarSpacing"/>
+ <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
+ <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+ <rule ref="Squiz.WhiteSpace.PropertyLabelSpacing"/>
+ <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
+ <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
+ <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+ <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+ <!--
+     CSS
+     ClassDefinitionClosingBraceSpace
+     ClassDefinitionNameSpacing
+     ClassDefinitionOpeningBraceSpace
+     ColonSpacing
+     ColourDefinition
+     DisallowMultipleStyleDefinitions
+     DuplicateClassDefinition
+     DuplicateStyleDefinition
+     EmptyClassDefinition
+     EmptyStyleDefinition
+     Indentation
+     LowercaseStyleDefinition
+     MissingColon
+     Opacity
+     SemicolonSpacing
+     Debug/                                      
+     JavaScriptLint
+     JSLint
+     SuperfluousWhitespace
+ -->
+</ruleset>
