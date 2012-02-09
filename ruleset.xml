@@ -63,14 +63,7 @@
  <rule ref="PEAR.ControlStructures.MultiLineCondition"/>
  <rule ref="PEAR.Functions.FunctionCallSignature"/>
 
- <!-- Include the whole Squiz standard except FunctionComment, which we override -->
- <rule ref="Squiz">
-  <exclude name="Squiz.Commenting.FunctionComment"/>
-  <exclude name="Squiz.Commenting.FileComment"/>
-  <exclude name="Squiz.Files.FileExtension"/>
-  <exclude name="Squiz.Commenting.ClassComment"/>
- </rule>
- <rule ref="Squiz.Classes.ClassDeclaration"/>
+ <!--rule ref="Squiz.Classes.ClassDeclaration"/-->
  <rule ref="Squiz.Classes.ClassFileName"/> 
  <rule ref="Squiz.Classes.DuplicateProperty"/> 
  <rule ref="Squiz.Classes.LowercaseClassKeywords"/> 
@@ -97,27 +90,27 @@
  <rule ref="Squiz.Formatting.OperatorBracket"/>
 
  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
- <rule ref="Squiz.Functions.FunctionDeclaration"/>
+ <!--rule ref="Squiz.Functions.FunctionDeclaration"/-->
  <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
  <rule ref="Squiz.Functions.GlobalFunction"/>
  <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
- <rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/>
+ <!--rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/-->
 
  <rule ref="Squiz.NamingConventions.ConstantCase"/>
  <rule ref="Squiz.NamingConventions.ValidFunctionName"/>
  <rule ref="Squiz.NamingConventions.ValidVariableName"/>
 
  <rule ref="Squiz.Objects.DisallowObjectStringIndex"/>
- <rule ref="Squiz.Objects.ObjectInstantiation"/>
+ <!--rule ref="Squiz.Objects.ObjectInstantiation"/-->
  <rule ref="Squiz.Objects.ObjectMemberComma"/>
 
- <rule ref="Squiz.Operators.ComparisonOperatorUsage"/>
+ <!--rule ref="Squiz.Operators.ComparisonOperatorUsage"/-->
  <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
  <rule ref="Squiz.Operators.ValidLogicalOperators"/>
 
  <rule ref="Squiz.PHP.CommentedOutCode"/>
- <rule ref="Squiz.PHP.DisallowComparisonAssignment"/>
- <rule ref="Squiz.PHP.DisallowInlineIf"/>
+ <!--rule ref="Squiz.PHP.DisallowComparisonAssignment"/-->
+ <!--rule ref="Squiz.PHP.DisallowInlineIf"/-->
  <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
  <rule ref="Squiz.PHP.DisallowObEndFlush"/>
  <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
@@ -141,9 +134,9 @@
 
  <rule ref="Squiz.WhiteSpace.CastSpacing"/>
  <rule ref="Squiz.WhiteSpace.ControlStructureSpacing"/>
- <rule ref="Squiz.WhiteSpace.FunctionClosingBraceSpace"/>
- <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
- <rule ref="Squiz.WhiteSpace.FunctionSpacing"/>
+ <!--rule ref="Squiz.WhiteSpace.FunctionClosingBraceSpace"/-->
+ <!--rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/-->
+ <!--rule ref="Squiz.WhiteSpace.FunctionSpacing"/-->
  <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
  <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
  <rule ref="Squiz.WhiteSpace.MemberVarSpacing"/>
