@@ -96,7 +96,7 @@
  <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
  <!--rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/-->
 
- <rule ref="Squiz.NamingConventions.ConstantCase"/>
+ <!--rule ref="Squiz.NamingConventions.ConstantCase"/-->
  <rule ref="Squiz.NamingConventions.ValidFunctionName"/>
  <rule ref="Squiz.NamingConventions.ValidVariableName"/>
 
