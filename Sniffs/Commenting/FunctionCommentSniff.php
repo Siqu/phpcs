@@ -244,6 +244,8 @@ class Seb_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer_Snif
         }//end if
 
         // Exactly one blank line before tags.
+        // SEB - disable this
+        /*
         $params = $this->commentParser->getTagOrders();
         if (count($params) > 1) {
             $newlineSpan = $comment->getNewlineAfter();
@@ -256,7 +258,7 @@ class Seb_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer_Snif
                 $phpcsFile->addError($error, ($commentStart + $newlineCount), 'SpacingBeforeTags');
                 $short = rtrim($short, $phpcsFile->eolChar.' ');
             }
-        }
+        } */
 
         // Short description must be single line and end with a full stop.
         $testShort = trim($short);
