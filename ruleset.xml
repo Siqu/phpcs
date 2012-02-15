@@ -76,16 +76,16 @@
  <rule ref="Squiz.ControlStructures.ElseIfDeclaration"/>
  <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
  <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
- <rule ref="Squiz.ControlStructures.InlineIfDeclaration"/>
+ <!--rule ref="Squiz.ControlStructures.InlineIfDeclaration"/-->
  <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
  <rule ref="Squiz.ControlStructures.SwitchDeclaration"/>
 
- <rule ref="Squiz.Commenting.InlineComment"/>
+ <!--rule ref="Squiz.Commenting.InlineComment"/-->
  <rule ref="Squiz.Commenting.BlockComment"/>
  <rule ref="Squiz.Commenting.DocCommentAlignment"/>
  <rule ref="Squiz.Commenting.EmptyCatchComment"/>
  <rule ref="Squiz.Commenting.LongConditionClosingComment"/>
- <rule ref="Squiz.Commenting.PostStatementComment"/>
+ <!--rule ref="Squiz.Commenting.PostStatementComment"/-->
 
  <rule ref="Squiz.Formatting.OperatorBracket"/>
 
@@ -96,7 +96,7 @@
  <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
  <!--rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/-->
 
- <rule ref="Squiz.NamingConventions.ConstantCase"/>
+ <!--rule ref="Squiz.NamingConventions.ConstantCase"/-->
  <rule ref="Squiz.NamingConventions.ValidFunctionName"/>
  <rule ref="Squiz.NamingConventions.ValidVariableName"/>
 
