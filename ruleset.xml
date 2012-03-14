@@ -61,7 +61,7 @@
 
  <rule ref="PEAR.Functions.ValidDefaultValue"/>
  <rule ref="PEAR.ControlStructures.MultiLineCondition"/>
- <rule ref="PEAR.Functions.FunctionCallSignature"/>
+ <!--rule ref="PEAR.Functions.FunctionCallSignature"/-->
 
  <!--rule ref="Squiz.Classes.ClassDeclaration"/-->
  <rule ref="Squiz.Classes.ClassFileName"/> 
@@ -122,7 +122,7 @@
  <rule ref="Squiz.PHP.Heredoc"/>
  <rule ref="Squiz.PHP.InnerFunctions"/>
  <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
- <rule ref="Squiz.PHP.NonExecutableCode"/>
+ <!--rule ref="Squiz.PHP.NonExecutableCode"/-->
 
  <rule ref="Squiz.Scope.MemberVarScope"/>
  <rule ref="Squiz.Scope.MethodScope"/>
@@ -141,7 +141,7 @@
  <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
  <rule ref="Squiz.WhiteSpace.MemberVarSpacing"/>
  <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
- <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+ <!--rule ref="Squiz.WhiteSpace.OperatorSpacing"/-->
  <rule ref="Squiz.WhiteSpace.PropertyLabelSpacing"/>
  <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
  <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
