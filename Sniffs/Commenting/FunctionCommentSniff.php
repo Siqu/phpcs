@@ -593,27 +593,29 @@ class Seb_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer_Snif
                     $previousName = ($previousParam->getVarName() !== '') ? $previousParam->getVarName() : 'UNKNOWN';
 
                     // Check to see if the parameters align properly.
-                    if ($param->alignsVariableWith($previousParam) === false) {
-                        $error = 'The variable names for parameters %s (%s) and %s (%s) do not align';
-                        $data  = array(
-                                  $previousName,
-                                  ($pos - 1),
-                                  $paramName,
-                                  $pos,
-                                 );
-                        $this->currentFile->addError($error, $errorPos, 'ParameterNamesNotAligned', $data);
-                    }
+                    // SEB - disable
+                    //if ($param->alignsVariableWith($previousParam) === false) {
+                        //$error = 'The variable names for parameters %s (%s) and %s (%s) do not align';
+                        //$data  = array(
+                                  //$previousName,
+                                  //($pos - 1),
+                                  //$paramName,
+                                  //$pos,
+                                 //);
+                        //$this->currentFile->addError($error, $errorPos, 'ParameterNamesNotAligned', $data);
+                    //}
 
-                    if ($param->alignsCommentWith($previousParam) === false) {
-                        $error = 'The comments for parameters %s (%s) and %s (%s) do not align';
-                        $data  = array(
-                                  $previousName,
-                                  ($pos - 1),
-                                  $paramName,
-                                  $pos,
-                                 );
-                        $this->currentFile->addError($error, $errorPos, 'ParameterCommentsNotAligned', $data);
-                    }
+                    // SEB - disable
+                    //if ($param->alignsCommentWith($previousParam) === false) {
+                        //$error = 'The comments for parameters %s (%s) and %s (%s) do not align';
+                        //$data  = array(
+                                  //$previousName,
+                                  //($pos - 1),
+                                  //$paramName,
+                                  //$pos,
+                                 //);
+                        //$this->currentFile->addError($error, $errorPos, 'ParameterCommentsNotAligned', $data);
+                    //}
                 }
 
                 // Variable must be one of the supported standard type.
