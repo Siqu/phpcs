@@ -77,7 +77,6 @@
  <rule ref="Squiz.Commenting.BlockComment"/>
  <rule ref="Squiz.Commenting.DocCommentAlignment"/>
  <rule ref="Squiz.Commenting.EmptyCatchComment"/>
- <rule ref="Squiz.Formatting.OperatorBracket"/>
  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
  <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
  <rule ref="Squiz.Functions.GlobalFunction"/>
