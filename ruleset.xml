@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <ruleset name="Seb">
- <description>Serebrov Boris's coding standard</description>
+ <description>Serebrov Boris's php coding standard</description>
+
+ <!-- Include the whole PSR-2 standard -->
+ <rule ref="PSR2">
+  <!-- here as example -->
+  <!-- exclude name="Squiz.Commenting.FunctionComment"/-->
+ </rule>
 
  <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
  <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
@@ -10,40 +16,13 @@
  <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
  <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
 
- <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
- <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
-
  <rule ref="Generic.Commenting.Todo"/>
 
- <rule ref="Generic.ControlStructures.InlineControlStructure"/>
-
- <rule ref="Generic.Files.LineEndings"/>
-
- <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
- <!--rule ref="Generic.Formatting.MultipleStatementAlignment"/-->
- <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
-
- <rule ref="Generic.NamingConventions.ConstructorName"/>
- <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
- <!--rule ref="PEAR.NamingConventions.ValidClassName"/-->
-
- <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
- <rule ref="Generic.WhiteSpace.ScopeIndent"/>
-
- <rule ref="Generic.PHP.DisallowShortOpenTag"/>
  <rule ref="Generic.PHP.NoSilencedErrors"/>
  <!--Checks that all uses of true, false and null are lowerrcase.-->
  <rule ref="Generic.PHP.LowerCaseConstant"/>
  <rule ref="Generic.PHP.DeprecatedFunctions"/>
  <rule ref="Generic.PHP.ForbiddenFunctions"/>
-
- <!-- Lines can be 120 chars long, but never show errors -->
- <rule ref="Generic.Files.LineLength">
-  <properties>
-   <property name="lineLimit" value="120"/>
-   <property name="absoluteLineLimit" value="0"/>
-  </properties>
- </rule>
 
  <!-- Tweaks to metrics -->
  <rule ref="Generic.Metrics.CyclomaticComplexity">
@@ -59,35 +38,20 @@
   </properties>
  </rule>
 
- <rule ref="PEAR.Functions.ValidDefaultValue"/>
- <rule ref="PEAR.ControlStructures.MultiLineCondition"/>
-
  <rule ref="Squiz.Classes.ClassFileName"/> 
  <rule ref="Squiz.Classes.DuplicateProperty"/> 
  <rule ref="Squiz.Classes.LowercaseClassKeywords"/> 
  <rule ref="Squiz.Classes.SelfMemberReference"/> 
- <rule ref="Squiz.Classes.ValidClassName"/> 
  <rule ref="Squiz.CodeAnalysis.EmptyStatement"/> 
- <rule ref="Squiz.ControlStructures.ControlSignature"/>
- <rule ref="Squiz.ControlStructures.ElseIfDeclaration"/>
- <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
- <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
- <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
- <rule ref="Squiz.ControlStructures.SwitchDeclaration"/>
  <rule ref="Squiz.Commenting.BlockComment"/>
  <rule ref="Squiz.Commenting.DocCommentAlignment"/>
  <rule ref="Squiz.Commenting.EmptyCatchComment"/>
- <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
  <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
  <rule ref="Squiz.Functions.GlobalFunction"/>
  <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
- <rule ref="Squiz.NamingConventions.ValidFunctionName"/>
- <rule ref="Squiz.Objects.DisallowObjectStringIndex"/>
  <rule ref="Squiz.Objects.ObjectMemberComma"/>
- <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
  <rule ref="Squiz.Operators.ValidLogicalOperators"/>
  <rule ref="Squiz.PHP.CommentedOutCode"/>
- <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
  <rule ref="Squiz.PHP.DisallowObEndFlush"/>
  <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
  <rule ref="Squiz.PHP.DiscouragedFunctions"/>
@@ -101,13 +65,6 @@
  <rule ref="Squiz.Scope.MethodScope"/>
  <rule ref="Squiz.Scope.StaticThisUsage"/>
  <rule ref="Squiz.Strings.EchoedStrings"/>
- <rule ref="Squiz.WhiteSpace.CastSpacing"/>
  <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
- <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
- <rule ref="Squiz.WhiteSpace.MemberVarSpacing"/>
- <rule ref="Squiz.WhiteSpace.PropertyLabelSpacing"/>
- <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
- <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
- <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
  <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
 </ruleset>
